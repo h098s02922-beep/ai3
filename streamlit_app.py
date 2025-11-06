@@ -75,10 +75,14 @@ CONTENT_BY_LABEL: dict[str, dict[str, list[str]]] = {
     #   "videos": ["https://youtu.be/XXXXXXXXXXX"]
     # },
 
-    labels[0]:{"texts":["중국식 냉면은 잘 모른다"]},
-    labels[1]:{"texts":["짜장면은 까맣다"]},
-    labels[2]:{"texts":["짬뽕은 빨갛다"]},
-    labels[3]:{"texts":["탕수육의 탕은 설탕의 탕인거 앎?"]},
+    labels[0]:{"texts":["중국식 냉면은 잘 모른다"],
+              "videos":["https://youtu.be/JGPPYe7l6qE?si=-IsSf-eHv9QAs1L2"]},
+    labels[1]:{"texts":["짜장면은 까맣다"],
+              "videos":["https://youtu.be/sO8qdAuBAQs?si=Li0X5B-sDw2ZO263"]},
+    labels[2]:{"texts":["짬뽕은 빨갛다"],
+              "videos":["https://youtu.be/GP1AQDGYu2Q?si=dLT2K8Qp78uQZwkk"]},
+    labels[3]:{"texts":["탕수육의 탕은 설탕의 탕인거 앎?",
+                       "videos":["https://youtube.com/shorts/Wloodma1iLY?si=dBqEU7c3rT_7GQ-e"]]},
 }
 
 # ======================
