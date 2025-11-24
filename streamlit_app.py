@@ -43,7 +43,7 @@ if "last_prediction" not in st.session_state:
 # ======================
 # 모델 로드
 # ======================
-FILE_ID = st.secrets.get("GDRIVE_FILE_ID", "19dS6rAzHlGekODz1l2F020D9XMlhNDYS")
+FILE_ID = st.secrets.get("GDRIVE_FILE_ID", "1BrLFemg4YPrSLtYex3ljRzsRmB30wad4")
 MODEL_PATH = st.secrets.get("MODEL_PATH", "model.pkl")
 
 @st.cache_resource
