@@ -4,6 +4,8 @@ from io import BytesIO
 import numpy as np
 import streamlit as st
 from PIL import Image, ImageOps
+from fastai.vision.all import *
+import gdown
 
 # ======================
 # 페이지/스타일
@@ -66,18 +68,11 @@ st.markdown("---")
 # 각 라벨당 최대 3개씩 표시됩니다.
 # ======================
 CONTENT_BY_LABEL: dict[str, dict[str, list[str]]] = {
-    # 예)
-    # "짬뽕": {
-    #   "texts": ["짬뽕의 특징과 유래", "국물 맛 포인트", "지역별 스타일 차이"],
-    #   "images": ["https://.../jjampong1.jpg", "https://.../jjampong2.jpg"],
-    #   "videos": ["https://youtu.be/XXXXXXXXXXX"]
-    # },
-
     labels[0]:{"texts":["중국식 냉면은 잘 모른다"], "videos":["https://youtu.be/JGPPYe7l6qE?si=-IsSf-eHv9QAs1L2"], "images":["https://share.google/images/tX7h2RfcFNvjFE9pZ"]},
     labels[1]:{"texts":["짜장면은 까맣다"], "videos":["https://youtu.be/sO8qdAuBAQs?si=Li0X5B-sDw2ZO263"], "images":["https://share.google/images/uph67fxL2YzEYulvl"]},
     labels[2]:{"texts":["짬뽕은 빨갛다"], "videos":["https://youtu.be/GP1AQDGYu2Q?si=dLT2K8Qp78uQZwkk"], "images":["https://share.google/images/qAKuLctl5VPTvoiqp"]},
-    labels[3]:{"texts":["탕수육의 탕은 설탕의 탕인거 앎?"], "videos":["https://youtube.com/shorts/Wloodma1iLY?si=dBqEU7c3rT_7GQ-e"]}, "images":["https://share.google/images/QbHbpNUKiVpI129vB"]},
-
+    labels[3]:{"texts":["탕수육의 탕은 설탕의 탕인거 앎?"], "videos":["https://youtube.com/shorts/Wloodma1iLY?si=dBqEU7c3rT_7GQ-e"], "images":["https://share.google/images/QbHbpNUKiVpI129vB"]},
+}
 
 # ======================
 # 유틸
