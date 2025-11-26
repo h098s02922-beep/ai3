@@ -70,7 +70,7 @@ st.markdown("---")
 CONTENT_BY_LABEL: dict[str, dict[str, list[str]]] = {
     labels[0]:{"texts":["중국식 냉면은 잘 모른다"], "videos":["https://youtu.be/JGPPYe7l6qE?si=-IsSf-eHv9QAs1L2"], "images":["https://minio.nculture.org/amsweb-opt/multimedia_assets/5/13787/20519/c/13787-full-size.jpg"]},
     labels[1]:{"texts":["짜장면은 까맣다"], "videos":["https://youtu.be/sO8qdAuBAQs?si=Li0X5B-sDw2ZO263"], "images":["https://recipe1.ezmember.co.kr/cache/recipe/2023/09/28/508b7b33d78930782020c04e793a1b251.jpg"]},
-    labels[2]:{"texts":["짬뽕은 빨갛다"], "videos":["https://youtu.be/GP1AQDGYu2Q?si=dLT2K8Qp78uQZwkk"], "images":["https://share.google/images/qAKuLctl5VPTvoiqp"], "images":[https://www.esquirekorea.co.kr/resources_old/online/org_online_image/eq/71c93efd-352d-4fb4-8a98-dd1b51475442.jpg"]},
+    labels[2]:{"texts":["짬뽕은 빨갛다"], "videos":["https://youtu.be/GP1AQDGYu2Q?si=dLT2K8Qp78uQZwkk"], "images":["https://share.google/images/qAKuLctl5VPTvoiqp"], "images":["https://www.esquirekorea.co.kr/resources_old/online/org_online_image/eq/71c93efd-352d-4fb4-8a98-dd1b51475442.jpg"]},
 }
 
 # ======================
